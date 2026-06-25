@@ -217,7 +217,7 @@ def demo_3dgs_loss():
     ax.plot(qualities, l1_vals,       'b-o', markersize=4, linewidth=2, label='L1损失')
     ax.plot(qualities, ssim_vals,     'r-s', markersize=4, linewidth=2, label='1-SSIM损失')
     ax.plot(qualities, combined_vals, 'g-^', markersize=4, linewidth=2,
-            label='3DGS损失 (1-0.2)L₁ + 0.2·SSIM', linewidth=2.5)
+            label='3DGS损失 (1-0.2)L₁ + 0.2·SSIM')
     ax.set_xlabel('渲染质量（0=随机噪声，1=完美重建）')
     ax.set_ylabel('损失值')
     ax.set_title('各损失函数随质量的变化')
